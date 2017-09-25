@@ -1,0 +1,14 @@
+{
+  "name": "talknote-dark",
+  "private": true,
+  "version": "1.0.0",
+  "author": "uknmr <kanamori@mediba.jp>",
+  "license": "MIT",
+  "scripts": {
+    "build": "node-sass src/talknote-dark.scss | csso --output dist/talknote-dark.css --stat"
+  },
+  "devDependencies": {
+    "csso-cli": "^1.1.0",
+    "node-sass": "^4.5.3"
+  }
+}

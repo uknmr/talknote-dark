@@ -1,0 +1,36 @@
+:root {
+  --fg-color1: rgb(96, 125, 139);
+  --fg-color2: rgba(255, 255, 255, 0.75);
+  --fg-color3: rgb(158, 158, 158);
+  --fg-color4: rgb(88, 96, 105);
+
+  --bg-color1: rgb(26, 38, 50);
+  --bg-color2: rgb(36, 52, 71);
+  --bg-color3: rgb(36, 41, 46);
+  --bg-color4: rgb(21, 31, 41);
+  --bg-color5: rgba(255, 255, 255, 0.125);
+
+  --border-color: rgb(48, 66, 81);
+
+  --blue: rgb(33, 136, 255);
+}
+
+@import 'components/popup';
+@import 'components/form';
+
+body {
+  font-size: 14px;
+  background-color: var(--bg-color1);
+  color: var(--fg-color1);
+}
+
+#wrapper {
+  padding-top: 20px;
+}
+
+@import 'header';
+@import 'sidemenu';
+@import 'body';
+@import 'right-sidemenu';
+
+@import 'hidden';

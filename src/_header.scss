@@ -1,0 +1,144 @@
+// Header
+#header_bar {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  background-color: var(--bg-color3);
+  color: var(--fg-color2);
+  height: initial;
+}
+
+.logo_table {
+  height: initial !important;
+
+  img {
+    vertical-align: bottom;
+    margin-right: 5px;
+  }
+}
+
+.logo_table,
+#network_logo {
+  padding: initial !important;
+}
+
+.header_network_name {
+  font-size: inherit !important;
+  color: inherit !important;
+}
+
+#network_name {
+  line-height: 30px !important;
+}
+
+// お知らせ
+#news_topic {
+  @extend .popup;
+}
+
+.news_topic_title {
+  @extend .popup__header;
+
+  .notice_title {
+    margin: 0;
+  }
+}
+
+.news_at_header_wrapper {
+  li {
+    @extend .popup__item;
+
+    border: none !important;
+  }
+
+  .unread {
+    background-color: var(--bg-color2);
+  }
+
+  p {
+    color: inherit !important;
+  }
+}
+
+// 検索窓
+#search_field {
+  border: none;
+  border-radius: 3px;
+
+  input {
+    background-color: var(--bg-color4);
+    padding: 0 8px !important;
+    min-height: 30px;
+    color: var(--fg-color2);
+  }
+}
+
+#top_search_member_list {
+  @extend .popup;
+
+  .item_title {
+    @extend .popup__header;
+  }
+
+  .list_item_wrapper {
+    @extend .popup__item;
+
+    div {
+      background-color: transparent !important;
+    }
+  }
+
+  .suggest-result-boundary {
+    border: none;
+  }
+}
+
+.users_file_view {
+  display: none !important;
+}
+
+#header_my_pofile_item {
+  position: absolute;
+  right: 0;
+}
+
+.my_profile {
+  padding: initial !important;
+}
+
+.user_icon_cell {
+  width: initial !important;
+}
+
+#user_menu_popup_toggle {
+  font-size: 0 !important;
+  width: 0;
+  height: 0;
+  border: 4px solid;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  content: '';
+}
+
+#user_menu_popup {
+  @extend .popup;
+
+  a {
+    font-size: inherit;
+  }
+
+  li {
+    @extend .popup__item;
+
+    padding: 4px 10px 4px 15px;
+  }
+}
+
+#search_field img, // 虫めがね
+.search_filter, // 絞込
+#user_name,
+#network_information,
+#help,
+#logout {
+  display: none !important;
+}

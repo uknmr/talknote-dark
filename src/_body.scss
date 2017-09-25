@@ -1,0 +1,253 @@
+#container {
+  background-color: transparent !important;
+}
+
+#feed_table {
+  background-color: var(--bg-color1) !important;
+}
+
+#visualize_dm_member_list_dialog,
+#visualize_network_member_list_dialog {
+  @extend .popup;
+}
+
+// 投稿欄
+#message_text {
+  @extend .input-area;
+}
+.post_container {
+  border: none !important;
+}
+// アクションいらない（コメントボタンも消えて笑う
+.action_item:nth-child(-n + 3) {
+  display: none !important;
+}
+#button_conversation {
+  @extend .submit-button;
+}
+
+// 並び順
+#share #tab_feed_sort_link {
+  background-color: transparent !important;
+}
+#feed_sort_option {
+  @extend .popup;
+
+  div {
+    @extend .popup__item;
+  }
+}
+
+// メッセージ設定
+#dm_config_menu_dialog {
+  @extend .popup;
+
+  .item_title {
+    @extend .popup__header;
+  }
+
+  .menu_inner div {
+    @extend .popup__item;
+  }
+}
+
+.left_profile {
+  border: none !important;
+}
+
+.message_text {
+  color: inherit !important;
+}
+#feed_container {
+  > li + li {
+    margin-top: 30px !important;
+  }
+}
+.horizontal_url_preview_container,
+.desc_container,
+.url_preview_container {
+  border: none !important;
+}
+.dm_entry_date {
+  background-color: transparent !important;
+}
+.dm_border_box {
+  display: none !important;
+}
+.dm_entry_wrapper.hover {
+  background-color: transparent !important;
+}
+
+.other {
+  @extend .popup;
+
+  div {
+    @extend .popup__item;
+  }
+
+  a {
+    color: inherit !important;
+  }
+
+  .task {
+    display: none;
+  }
+}
+
+.read_status_dialog {
+  @extend .popup;
+}
+
+.good_status {
+  background-color: var(--bg-color1) !important;
+  border-color: var(--bg-color1) !important;
+}
+
+.user_title {
+  display: none !important;
+}
+
+.comment_status_now,
+.comment_status {
+  background-color: var(--bg-color2);
+}
+
+.comment_status,
+.comment_item {
+  border-color: var(--border-color) !important;
+  border-bottom: none !important;
+}
+
+// DM コメント欄
+#dm_post_box {
+  background-color: transparent !important;
+}
+
+.feed_comment {
+  @extend .input-area;
+
+  min-height: 100px !important;
+}
+
+.mention_description {
+  display: none;
+}
+
+.member_list.mention {
+  @extend .popup;
+
+  .entry_list_item {
+    @extend .popup__item;
+  }
+}
+
+// ネットワークオールいらない
+#member_list_network_all {
+  display: none !important;
+}
+
+.post_comment_container {
+  border: none;
+  background-color: transparent;
+}
+
+.mention_layer {
+  background-color: transparent !important;
+}
+
+.comment_icon_container {
+  display: none !important;
+}
+
+.post_comment {
+  @extend .submit-button;
+}
+
+// いいねリスト
+.member_list_wrapper {
+  @extend .popup;
+
+  border: 1px solid var(--border-color);
+  border-radius: 3px;
+  padding: 0;
+
+  .w_box {
+    @extend .popup__header;
+
+    h3 {
+      color: inherit;
+    }
+  }
+
+  .box_content {
+    background-color: transparent;
+    padding: 0 8px;
+  }
+
+  .unit_name {
+    display: none;
+  }
+}
+
+.sticker_container {
+  @extend .popup;
+}
+
+.feed_message_end .border-bottom {
+  display: none;
+}
+
+.dm_entry_default,
+.comment_status_readmore_container {
+  border: none !important;
+}
+
+#new_dm {
+  @extend .popup;
+
+  h3 {
+    color: inherit !important;
+  }
+
+  .box_title,
+  .box_contents {
+    background-color: transparent !important;
+  }
+}
+
+#message_form_new_dm {
+  background-color: transparent !important;
+  padding: 0 !important;
+  border: none !important;
+}
+
+#friends_input {
+  @extend .input-area;
+
+  margin: 0 !important;
+  width: 100%;
+}
+
+#friends {
+  span {
+    margin: 0;
+    background-color: transparent;
+    color: inherit;
+  }
+}
+
+#member_list_new_dm {
+  @extend .popup;
+
+  .entry_list_item {
+    @extend .popup__item;
+  }
+}
+
+#dm_message {
+  @extend .input-area;
+}
+
+#newdirect_message_post {
+  @extend .submit-button;
+}

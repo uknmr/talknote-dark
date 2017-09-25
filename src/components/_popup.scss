@@ -1,0 +1,22 @@
+.popup {
+  background-color: var(--bg-color1) !important;
+  border-color: var(--border-color) !important;
+  border-radius: 3px !important;
+  color: var(--fg-color3) !important;
+
+  &__header {
+    background-color: var(--bg-color2) !important;
+    padding: 8px 10px !important;
+    color: var(--fg-color4) !important;
+  }
+
+  &__item {
+    background-color: transparent !important;
+    color: inherit !important;
+
+    &:hover {
+      background-color: var(--bg-color2) !important;
+      color: var(--fg-color2) !important;
+    }
+  }
+}
