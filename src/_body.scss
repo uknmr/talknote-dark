@@ -6,6 +6,10 @@
   background-color: var(--bg-color1) !important;
 }
 
+#share {
+  overflow: initial !important;
+}
+
 #visualize_dm_member_list_dialog,
 #visualize_network_member_list_dialog {
   @extend .popup;
