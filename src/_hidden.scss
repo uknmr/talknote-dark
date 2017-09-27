@@ -2,7 +2,7 @@
 #attachment_list,
 #attachment_list_detail_dialog,
 #right_nav_tasks,
-#right_nav_tasks + .right-nav-content-header,
+#right_nav_tasks ~ *,
 .contact_form,
 #sidebar_footer_nav {
   display: none !important;
